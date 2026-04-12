@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package ordertrackingpb;
 
-option go_package = "github.com/aidynkabdykarimov/ap2-generated/ordertrackingpb;ordertrackingpb";
+option go_package = "github.com/Moldirkab/ap2-generated/ordertrackingpb;ordertrackingpb";
 
 import "google/protobuf/timestamp.proto";
 

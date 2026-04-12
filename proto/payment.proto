@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package paymentpb;
 
-option go_package = "github.com/aidynkabdykarimov/ap2-generated/paymentpb;paymentpb";
+option go_package = "github.com/Moldirkab/ap2-generated/paymentpb;paymentpb";
 
 service PaymentService {
   rpc ProcessPayment(PaymentRequest) returns (PaymentResponse);
