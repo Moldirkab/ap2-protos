@@ -1,4 +1,4 @@
-syntax = "proto3";// Using Proto3 syntax (default in modern gRPC)
+syntax = "proto3";
 
 package paymentpb;
 
