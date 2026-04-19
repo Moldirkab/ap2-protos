@@ -1,4 +1,4 @@
-syntax = "proto3"; //3rd version
+syntax = "proto3";
 
 package paymentpb;
 
