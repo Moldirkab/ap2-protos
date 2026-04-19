@@ -6,6 +6,7 @@ option go_package = "github.com/Moldirkab/ap2-generated/paymentpb;paymentpb";
 
 service PaymentService {
   rpc ProcessPayment(PaymentRequest) returns (PaymentResponse);
+  rpc GetPaymentStats(GetPaymentStatsRequest) returns (PaymentStats);
 }
 
 message PaymentRequest {
@@ -19,4 +20,13 @@ message PaymentResponse {
   string transaction_id = 3;
   int64 amount = 4;
   string status = 5;
+}
+
+message GetPaymentStatsRequest {}
+
+message PaymentStats {
+  int64 total_payments = 1;
+  int64 successful_counts = 2;
+  int64 failed_counts = 3;
+  int64 total_amount = 4;
 }
